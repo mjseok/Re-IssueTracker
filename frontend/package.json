@@ -6,6 +6,15 @@
   "repository": "https://github.com/mjseok/Re-IssueTracker",
   "author": "minji",
   "license": "MIT",
+  "scripts": { 
+    "dev": "webpack-dev-server --config config/webpack.dev.js", 
+    "prod": "webpack-dev-server --config config/webpack.prod.js", 
+    "build:dev": "webpack --config config/webpack.dev.js", 
+    "build:prod": "webpack --config config/webpack.prod.js" 
+  }, 
+  "browserslist": [ 
+    "ie 11" 
+  ],
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
