@@ -4,7 +4,7 @@ const webpack=require("webpack")
 
 module.exports={
     entry:`${path.resolve(__dirname,"../src")}/index.tsx`,
-    modlue:{
+    module:{
         rules:[
             {
                 test: /\.(ts|tsx|js|jsx)$/,
