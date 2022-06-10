@@ -1,14 +1,14 @@
 import React from 'react';
 import MainPageLayout from '../../layouts/MainPageLayout';
 
-const IssueListPage=()=>{
+const IssueDetailPage=()=>{
     return(
         <MainPageLayout>
             <>
-            IssueListPage
+            IssueDetailPage
             </>
         </MainPageLayout>
     )
 
 }
-export default IssueListPage
+export default IssueDetailPage

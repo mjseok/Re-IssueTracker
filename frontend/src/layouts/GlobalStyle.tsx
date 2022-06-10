@@ -4,7 +4,9 @@ import reset from 'styled-reset';
 const theme={
     color:{
         textColor:'#24292e',
-        headerBgColor: '#24292e'
+        headerBgColor: '#24292e',
+        mainColor:'#ffffff',
+        white:'#ffffff'
     },
     fontSize: {
         xl: '32px',
@@ -17,6 +19,17 @@ const theme={
 
 const GlobalStyle= createGlobalStyle`
     ${reset}
-    /*other css*/
+    a:link { 
+        text-decoration: none;
+    }
+        
+    a:visited { 
+        text-decoration: none;
+    }
+        
+    a:hover { 
+        text-decoration: underline;
+    }
+
 `
 export {GlobalStyle,theme}

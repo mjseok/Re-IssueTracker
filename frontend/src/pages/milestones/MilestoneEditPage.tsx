@@ -1,14 +1,14 @@
 import React from 'react';
 import MainPageLayout from '../../layouts/MainPageLayout';
 
-const IssueListPage=()=>{
+const MilestoneEditPage=()=>{
     return(
         <MainPageLayout>
             <>
-            IssueListPage
+            MilestoneEditPage
             </>
         </MainPageLayout>
     )
 
 }
-export default IssueListPage
+export default MilestoneEditPage
