@@ -6,7 +6,8 @@ const theme={
         textColor:'#24292e',
         headerBgColor: '#24292e',
         mainColor:'#ffffff',
-        white:'#ffffff'
+        white:'#ffffff',
+        shadeBgColor: '#f6f8fa',
     },
     fontSize: {
         xl: '32px',
