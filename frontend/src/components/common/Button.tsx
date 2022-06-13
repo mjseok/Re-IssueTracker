@@ -1,13 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { CSSProperties } from 'styled-components';
 
-const Button=()=>{
+const Button=({role,style}:ButtonProps)=>{
     return(
-        <ButtonWrapper>
+        <ButtonWrapper
+            type={role}
+            style={style}>
 
         </ButtonWrapper>
     )
-
+}
+interface ButtonProps{
+    role:'button' | 'submit',
+    style:CSSProperties
 }
 const ButtonWrapper=styled.button`
     
