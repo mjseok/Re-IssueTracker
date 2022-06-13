@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components';
 import Header from '../components/Header';
 
-const MainPageLayout = ({children}:ChildrenProps)=>{
+const MainPageLayout = ({children}:childrenType)=>{
 
     return (
         <Container>
@@ -13,8 +13,8 @@ const MainPageLayout = ({children}:ChildrenProps)=>{
         
     )
 }
-type ChildrenProps = {
-    children: React.ReactElement
+interface childrenType{
+    children: ReactNode
 }
 const Container=styled.div`
     width:100%;

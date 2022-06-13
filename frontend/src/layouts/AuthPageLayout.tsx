@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from "styled-components";
 
-const AuthPageLayout=({children}:ChildrenProps)=>{
+const AuthPageLayout=({children}:childrenType)=>{
     return(
         <Container>
             <Main>
@@ -10,8 +10,9 @@ const AuthPageLayout=({children}:ChildrenProps)=>{
         </Container>
     )
 }
-type ChildrenProps = {
-    children: React.ReactElement
+
+interface childrenType{
+    children: ReactNode
 }
 const Container=styled.div`
     width:100%;
