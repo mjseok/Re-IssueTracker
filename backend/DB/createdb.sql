@@ -39,3 +39,17 @@ create table user_issue(
     user_id int
     isOwner boolean
 )
+create table comment(
+    id int(10) PRIMARY KEY AUTO_INCREMENT,
+    issue_id int(10).
+    user_id int(10),
+    isMain boolean,
+    content text,
+)
+create table reaction(
+    id int(10) PRIMARY KEY AUTO_INCREMENT,
+    comment_id int(10),
+    user_id int(10),
+    type varchar(10),
+
+)
